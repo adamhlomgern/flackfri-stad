@@ -1,0 +1,237 @@
+/* styles.css */
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Tar hela enhetens höjd */
+    width: 100vw; /* Tar hela enhetens bredd */
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 40px 60px;
+  }
+  
+  .logo {
+    max-width: 150px;
+    height: auto;
+  }
+  
+  .content {
+    flex: 1; /* Fyller upp resten av höjden för att centrera innehållet */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+  }
+  
+  .text-section {
+    max-width: 60%;
+    text-align: left;
+  }
+  
+  .small-heading {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+
+  .title {
+    font-size: 3.6em;
+    font-weight: 900;
+    margin: 0 0;
+  }
+  
+  .subtitle {
+    font-size: 1.6em;
+    color: #555;
+    margin-top: 10px;
+
+  }
+  
+  .cta {
+    margin-top: 20px;
+  }
+  
+  .cta p {
+    font-size: 1.8em;
+    color: #333;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .button.primary {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .button.primary:hover {
+    background-color: #333;
+  }
+  
+  .button.secondary {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+  }
+  
+  .button.secondary:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .image-container {
+    max-width: 40%;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    max-height: 80vh; /* Ser till att bilden inte överstiger viewport-höjden */
+  }
+  
+  /* @media (min-width: 1339px) {
+    .title {
+        font-size: 3.2em;
+    }
+} */
+    /* @media (min-width: 801px) {
+        .title {
+            font-size: 2.4em;
+        }
+        .text-section {
+            max-width: 100%;
+            }   
+            .cta p {
+            font-size: 1.2em;
+            color: #333;
+          }
+          .subtitle {
+            font-size: 1.1em;
+            color: #555;
+            margin-top: 10px;
+        
+          }
+  } */
+
+  @media (max-width: 1150px) {
+    .title {
+        font-size: 2.3em;
+    }
+    .cta p {
+        font-size: 1.5em;
+        color: #333;
+    }
+    .subtitle {
+        font-size: 1.3em;
+        color: #555;
+        margin-top: 10px;
+    
+    }
+  }
+  @media (max-width: 800px) {
+    .content {
+      flex-direction: column; /* Stackar text och bild på varandra */
+      align-items: center; /* Centrerar innehållet */
+      padding: 10px;
+    }
+  
+    .text-section {
+      max-width: 1000%; /* Gör texten mer kompakt på mindre skärmar */
+      text-align: center; /* Centrerar texten */
+      margin-bottom: 20px; /* Ger lite utrymme mellan text och bild */
+      margin-top: 40px;
+    }
+  
+    .image-container {
+      max-width: 80%; /* Begränsar bildens bredd */
+    }
+  
+    .buttons {
+      flex-direction: column; /* Stackar knapparna på varandra */
+      gap: 10px; /* Lägger till mellanrum mellan knapparna */
+    }
+  
+    .button {
+      width: 100%; /* Gör knapparna bredare för bättre användarvänlighet */
+    }
+    .title {
+        font-size: 2.4em;
+    }
+    .cta p {
+        font-size: 1.5em;
+        color: #333;
+    }
+    .subtitle {
+        font-size: 1.3em;
+        color: #555;
+        margin-top: 10px;
+    
+    }
+  }
+  
+
+
+  @media (max-width:500px) {
+    .content {
+        flex-direction: column; /* Stackar text och bild på varandra */
+        align-items: center; /* Centrerar innehållet */
+        padding: 0;
+      }
+    .title {
+        font-size: 1.8em;
+    }
+    .small-heading {
+        font-size: 0.8em;
+        font-weight: bold;
+        color: #555;
+        margin-bottom: 5px;
+        margin-top: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+    .text-section {
+        max-width: 90%;
+    }
+    .cta p {
+        font-size: 1em;
+        color: #333;
+    }
+    .subtitle {
+        font-size: 1em;
+        color: #555;
+        margin-top: 10px;
+    
+    }
+    .header {
+        padding: 10px 20px;
+    }
+    .image-container {
+        max-width: 90%; /* Begränsar bildens bredd */
+      }
+  }
