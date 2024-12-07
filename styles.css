@@ -1,4 +1,7 @@
 /* styles.css */
+* {
+    box-sizing: border-box;
+  }
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
@@ -30,8 +33,9 @@ body {
     flex: 1; /* Fyller upp resten av höjden för att centrera innehållet */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 60px;
+
   }
   
   .text-section {
@@ -162,10 +166,9 @@ body {
     }
   
     .text-section {
-      max-width: 1000%; /* Gör texten mer kompakt på mindre skärmar */
+      max-width: 90%; /* Gör texten mer kompakt på mindre skärmar */
       text-align: center; /* Centrerar texten */
       margin-bottom: 20px; /* Ger lite utrymme mellan text och bild */
-      margin-top: 40px;
     }
   
     .image-container {
@@ -232,6 +235,6 @@ body {
         padding: 10px 20px;
     }
     .image-container {
-        max-width: 90%; /* Begränsar bildens bredd */
+        max-width: 100%; /* Begränsar bildens bredd */
       }
   }
