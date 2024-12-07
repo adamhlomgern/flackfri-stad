@@ -24,6 +24,10 @@ body {
     padding: 40px 60px;
   }
   
+  .buttons a {
+    text-decoration: none;
+
+  }
   .logo {
     max-width: 150px;
     height: auto;
@@ -204,7 +208,7 @@ body {
     .content {
         flex-direction: column; /* Stackar text och bild på varandra */
         align-items: center; /* Centrerar innehållet */
-        padding: 0;
+        padding: 0px;
       }
     .title {
         font-size: 1.8em;
@@ -219,7 +223,7 @@ body {
         letter-spacing: 0.5px;
       }
     .text-section {
-        max-width: 90%;
+        max-width: 100%;
     }
     .cta p {
         font-size: 1em;
